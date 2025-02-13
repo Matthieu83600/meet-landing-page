@@ -4,3 +4,9 @@
   margin-block-start: 48px;
   margin-inline: 80px;
 }
+@media (min-width: base.$md-breakpoint) {
+  .u-home-header {
+    margin-block-start: 80px;
+    max-inline-size: 1440px;
+  }
+}

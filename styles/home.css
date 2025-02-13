@@ -36,4 +36,11 @@ body {
   margin-inline: 80px;
 }
 
+@media (min-width: 768px) {
+  .u-home-header {
+    margin-block-start: 80px;
+    max-inline-size: 1440px;
+  }
+}
+
 /*# sourceMappingURL=home.css.map */
