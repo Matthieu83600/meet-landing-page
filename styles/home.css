@@ -1,0 +1,39 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  height: auto;
+}
+
+body {
+  font-family: "Red Hat Display";
+  font-size: 1rem;
+  line-height: 110%;
+  letter-spacing: 0;
+  color: #28283d;
+}
+
+.l-main-nav {
+  inline-size: 100%;
+}
+.l-main-nav__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.u-home-header {
+  margin-block-start: 48px;
+  margin-inline: 80px;
+}
+
+/*# sourceMappingURL=home.css.map */
