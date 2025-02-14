@@ -4,12 +4,22 @@
   margin-block-start: 3rem;
   margin-inline: 5rem;
 }
-@media (min-width: base.$md-breakpoint) {
+@media (min-width: base.$lg-breakpoint) {
   .u-home-header {
     margin-block-start: 5rem;
     max-inline-size: 90rem;
   }
 }
+@media (min-width: base.$xl-breakpoint) {
+  .u-home-header {
+    max-inline-size: 100%;
+  }
+}
 .u-home-main {
   margin-block: 4rem;
+}
+@media (min-width: base.$lg-breakpoint) {
+  .u-home-main {
+    margin-block: 4rem 4.5rem;
+  }
 }

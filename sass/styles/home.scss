@@ -33,6 +33,7 @@
     &-title {
       font-size: base.$fs-40;
       line-height: base.$line-height-110;
+      font-weight: 900;
     }
     &-description {
       color: base.$slate-600;
@@ -46,18 +47,55 @@
     }
   }
 }
-@media (min-width: base.$sm-breakpoint) {
+@media (min-width: base.$md-breakpoint) {
   .hero {
     &__img {
       margin-block-end: 4.5rem;
     }
     &__app {
-      margin-inline: 7.2406rem;
+      margin-inline: 7.2406em;
       &-title {
         font-size: base.$fs-48;
       }
       &-button {
         flex-direction: row;
+        gap: 17px;
+      }
+    }
+  }
+}
+@media (min-width: base.$lg-breakpoint) {
+  .hero {
+    &__container {
+      flex-direction: row;
+      > * {
+        flex-basis: 100%;
+      }
+    }
+    &__img {
+      display: none;
+      &-left {
+        justify-content: left;
+        margin-inline-start: -2%;
+        margin-block-start: -3.5625rem;
+      }
+      &-right {
+        justify-content: right;
+        margin-inline-end: -2.5%;
+        margin-block-start: 3.5625rem;
+      }
+      &-left,
+      &-right {
+        display: flex;
+        flex-basis: 100%;
+      }
+    }
+    &__app {
+      &-title {
+        font-size: base.$fs-64;
+      }
+      &-description {
+        font-size: base.$fs-18;
       }
     }
   }
