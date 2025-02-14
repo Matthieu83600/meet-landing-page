@@ -217,9 +217,9 @@ body {
 .introduction__cards-card {
   inline-size: 9.2188rem;
   block-size: 9rem;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 .introduction__cards-card:nth-child(1) {
   background-image: url("../assets/desktop/image-woman-in-videocall.jpg");
@@ -267,5 +267,33 @@ body {
     font-size: 2.25rem;
   }
 }
+@media (min-width: 70.625rem) {
+  .introduction {
+    margin-inline: 5rem;
+  }
+  .introduction__cards-card {
+    inline-size: 16rem;
+    block-size: 16rem;
+    border-radius: 0.5rem;
+  }
+  .introduction__text {
+    margin-inline: 288px;
+  }
+  .introduction__text-subtitle {
+    font-size: 1rem;
+  }
+  .introduction__text-title {
+    font-size: 2.5rem;
+  }
+  .introduction__text-description {
+    font-size: 1.125rem;
+  }
+}
+@media (min-width: 100rem) {
+  .introduction__cards {
+    gap: 3rem;
+  }
+}
+/* CTA section */
 
 /*# sourceMappingURL=home.css.map */
