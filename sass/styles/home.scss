@@ -100,3 +100,15 @@
     }
   }
 }
+@media (min-width: base.$xl-breakpoint) {
+  .hero {
+    &__img {
+      &-left {
+        margin-inline-start: 0;
+      }
+      &-right {
+        margin-inline-end: 0;
+      }
+    }
+  }
+}

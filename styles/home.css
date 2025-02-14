@@ -164,5 +164,13 @@ body {
     font-size: 1.125rem;
   }
 }
+@media (min-width: 100rem) {
+  .hero__img-left {
+    margin-inline-start: 0;
+  }
+  .hero__img-right {
+    margin-inline-end: 0;
+  }
+}
 
 /*# sourceMappingURL=home.css.map */
