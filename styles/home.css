@@ -118,7 +118,7 @@ body {
   gap: 16px;
 }
 
-@media (min-width: 37.5rem) {
+@media (min-width: 41.875rem) {
   .hero__img {
     margin-block-end: 4.5rem;
   }
@@ -248,6 +248,24 @@ body {
 .introduction__text-description {
   line-height: 150%;
   color: #87879d;
+}
+
+@media (min-width: 41.875rem) {
+  .introduction {
+    margin-block-start: 3.5rem;
+  }
+  .introduction__cards {
+    grid-template-columns: repeat(4, auto);
+  }
+  .introduction__text {
+    margin-inline: 5.5rem;
+  }
+  .introduction__text-subtitle {
+    font-size: 0.875rem;
+  }
+  .introduction__text-title {
+    font-size: 2.25rem;
+  }
 }
 
 /*# sourceMappingURL=home.css.map */

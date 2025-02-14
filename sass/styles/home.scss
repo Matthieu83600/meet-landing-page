@@ -174,7 +174,7 @@
   }
   &__text {
     &-subtitle {
-      font-size: 0.75rem;
+      font-size: base.$fs-12;
       font-weight: 900;
       color: base.$cyan-600;
       letter-spacing: base.$letter-spacing-4;
@@ -188,6 +188,23 @@
     &-description {
       line-height: base.$line-height-150;
       color: base.$slate-600;
+    }
+  }
+}
+@media (min-width: base.$md-breakpoint) {
+  .introduction {
+    margin-block-start: 3.5rem;
+    &__cards {
+      grid-template-columns: repeat(4, auto);
+    }
+    &__text {
+      margin-inline: 5.5rem;
+      &-subtitle {
+        font-size: base.$fs-14;
+      }
+      &-title {
+        font-size: base.$fs-36;
+      }
     }
   }
 }
