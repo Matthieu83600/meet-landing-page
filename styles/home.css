@@ -30,7 +30,7 @@ body {
   font-size: 1rem;
   font-weight: 900;
   line-height: 150%;
-  border-radius: 100px;
+  border-radius: 1.8125rem;
   border: none;
 }
 .c-button > span {
@@ -50,18 +50,18 @@ body {
 }
 
 .u-home-header {
-  margin-block-start: 48px;
-  margin-inline: 80px;
+  margin-block-start: 3rem;
+  margin-inline: 5rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .u-home-header {
-    margin-block-start: 80px;
-    max-inline-size: 1440px;
+    margin-block-start: 5rem;
+    max-inline-size: 90rem;
   }
 }
 .u-home-main {
-  margin-block: 64px;
+  margin-block: 4rem;
 }
 
 /* Hero section */
@@ -71,6 +71,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
+  overflow-x: hidden;
 }
 .hero__img {
   margin-block-end: 3rem;
@@ -85,9 +86,9 @@ body {
 .hero__app {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  margin-inline: 35px;
-  margin-bottom: 32px;
+  gap: 1.5rem;
+  margin-inline: 2.1875rem;
+  margin-bottom: 2rem;
 }
 .hero__app-title {
   font-size: 2.5rem;
@@ -102,6 +103,21 @@ body {
   align-items: center;
   justify-content: center;
   gap: 16px;
+}
+
+@media (min-width: 23.4375rem) {
+  .hero__img {
+    margin-block-end: 4.5rem;
+  }
+  .hero__app {
+    margin-inline: 7.2406rem;
+  }
+  .hero__app-title {
+    font-size: 3rem;
+  }
+  .hero__app-button {
+    flex-direction: row;
+  }
 }
 
 /*# sourceMappingURL=home.css.map */

@@ -11,6 +11,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    overflow-x: hidden;
   }
   &__img {
     margin-block-end: 3rem;
@@ -26,9 +27,9 @@
   &__app {
     display: flex;
     flex-direction: column;
-    gap: 24px;
-    margin-inline: 35px;
-    margin-bottom: 32px;
+    gap: 1.5rem;
+    margin-inline: 2.1875rem;
+    margin-bottom: 2rem;
     &-title {
       font-size: base.$fs-40;
       line-height: base.$line-height-110;
@@ -42,6 +43,22 @@
       align-items: center;
       justify-content: center;
       gap: 16px;
+    }
+  }
+}
+@media (min-width: base.$sm-breakpoint) {
+  .hero {
+    &__img {
+      margin-block-end: 4.5rem;
+    }
+    &__app {
+      margin-inline: 7.2406rem;
+      &-title {
+        font-size: base.$fs-48;
+      }
+      &-button {
+        flex-direction: row;
+      }
     }
   }
 }

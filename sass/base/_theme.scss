@@ -5,6 +5,7 @@ $font-family: "Red Hat Display", sans-serif;
 $fs-16: 1rem;
 $fs-18: 1.125rem;
 $fs-40: 2.5rem;
+$fs-48: 3rem;
 $fs-64: 4rem;
 
 // Line-height
@@ -13,7 +14,7 @@ $line-height-150: 150%;
 
 // Letter-spacing
 $letter-spacing-0: 0;
-$letter-spacing-4: 4px;
+$letter-spacing-4: 0.25rem;
 
 // Colors
 $cyan-300: #8fe3f9;
@@ -26,5 +27,5 @@ $slate-950: #28283d;
 $white: #fafafa;
 
 // Breakpoints
-$md-breakpoint: 768px;
-$sm-breakpoint: 375px;
+$md-breakpoint: 48rem;
+$sm-breakpoint: 23.4375rem;
