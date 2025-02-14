@@ -300,3 +300,13 @@
     }
   }
 }
+@media (min-width: base.$md-breakpoint) {
+  .cta {
+    padding-inline: 132px;
+    &__text {
+      &-title {
+        font-size: base.$fs-36;
+      }
+    }
+  }
+}

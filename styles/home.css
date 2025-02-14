@@ -358,4 +358,13 @@ body {
   text-decoration: underline;
 }
 
+@media (min-width: 41.875rem) {
+  .cta {
+    padding-inline: 132px;
+  }
+  .cta__text-title {
+    font-size: 2.25rem;
+  }
+}
+
 /*# sourceMappingURL=home.css.map */
