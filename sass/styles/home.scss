@@ -285,7 +285,7 @@
   &__text {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 1.5rem;
     margin-block-end: 6rem;
     &-title {
       font-size: base.$fs-32;
@@ -302,10 +302,38 @@
 }
 @media (min-width: base.$md-breakpoint) {
   .cta {
-    padding-inline: 132px;
+    padding-inline: 8.25rem;
     &__text {
       &-title {
         font-size: base.$fs-36;
+      }
+    }
+  }
+}
+@media (min-width: base.$lg-breakpoint) {
+  .cta {
+    background-image: linear-gradient(90deg, rgba(77, 151, 169, 0.9) 0%, rgba(77, 151, 169, 0.9) 100%),
+      url("../assets/desktop/image-footer.jpg");
+    background-size: cover;
+    margin-block-start: 11.2rem;
+    padding-inline: 0;
+    &__indicator {
+      margin-block-end: 0;
+    }
+    &__text {
+      display: grid;
+      grid-template-columns: 2fr 2fr 1fr;
+      align-items: flex-start;
+      text-align: left;
+      gap: 2rem;
+      padding-block: 7rem;
+      padding-inline: 10rem;
+      &-title {
+        font-size: base.$fs-40;
+        margin-top: -8px;
+      }
+      &-description {
+        font-size: base.$fs-18;
       }
     }
   }

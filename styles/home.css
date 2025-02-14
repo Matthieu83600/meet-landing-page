@@ -343,7 +343,7 @@ body {
 .cta__text {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 1.5rem;
   margin-block-end: 6rem;
 }
 .cta__text-title {
@@ -360,10 +360,37 @@ body {
 
 @media (min-width: 41.875rem) {
   .cta {
-    padding-inline: 132px;
+    padding-inline: 8.25rem;
   }
   .cta__text-title {
     font-size: 2.25rem;
+  }
+}
+@media (min-width: 70.625rem) {
+  .cta {
+    background-image: linear-gradient(90deg, rgba(77, 151, 169, 0.9) 0%, rgba(77, 151, 169, 0.9) 100%), url("../assets/desktop/image-footer.jpg");
+    background-size: cover;
+    margin-block-start: 11.2rem;
+    padding-inline: 0;
+  }
+  .cta__indicator {
+    margin-block-end: 0;
+  }
+  .cta__text {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    align-items: flex-start;
+    text-align: left;
+    gap: 2rem;
+    padding-block: 7rem;
+    padding-inline: 10rem;
+  }
+  .cta__text-title {
+    font-size: 2.5rem;
+    margin-top: -8px;
+  }
+  .cta__text-description {
+    font-size: 1.125rem;
   }
 }
 
