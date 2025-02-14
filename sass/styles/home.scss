@@ -112,3 +112,82 @@
     }
   }
 }
+/* Introduction section */
+.introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 4rem;
+  margin-block-start: 2rem;
+  margin-inline: 2rem;
+  &__indicator {
+    position: relative;
+    margin-block-start: 6rem;
+    > div {
+      width: 3.5rem;
+      height: 3.5rem;
+      border: 1px solid base.$slate-300;
+      border-radius: 50%;
+      > span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: 900;
+        color: base.$slate-600;
+      }
+    }
+    > div::after {
+      position: absolute;
+      top: -5rem;
+      content: "";
+      background-color: base.$slate-300;
+      width: 1px;
+      height: 5rem;
+    }
+  }
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 1rem;
+    &-card {
+      inline-size: 9.2188rem;
+      block-size: 9rem;
+      border-radius: 10px;
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+    &-card:nth-child(1) {
+      background-image: url("../assets/desktop/image-woman-in-videocall.jpg");
+    }
+    &-card:nth-child(2) {
+      background-image: url("../assets/desktop/image-women-videochatting.jpg");
+    }
+    &-card:nth-child(3) {
+      background-image: url("../assets/desktop/image-men-in-meeting.jpg");
+    }
+    &-card:nth-child(4) {
+      background-image: url("../assets/desktop/image-man-texting.jpg");
+    }
+  }
+  &__text {
+    &-subtitle {
+      font-size: 0.75rem;
+      font-weight: 900;
+      color: base.$cyan-600;
+      letter-spacing: base.$letter-spacing-4;
+      text-transform: uppercase;
+    }
+    &-title {
+      margin-block: 1rem 2rem;
+      font-size: base.$fs-32;
+      font-weight: 900;
+    }
+    &-description {
+      line-height: base.$line-height-150;
+      color: base.$slate-600;
+    }
+  }
+}
