@@ -1,0 +1,12 @@
+@use "./mixins";
+@use "../base";
+
+.c-button {
+  @include mixins.button-aspect;
+  > span {
+    color: base.$cyan-300;
+  }
+  &--purple {
+    background-color: base.$purple-600;
+  }
+}

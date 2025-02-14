@@ -1,3 +1,47 @@
 @use "../base";
+@use "../components/buttons";
 @use "../layouts";
 @use "../utils";
+
+/* Hero section */
+.hero {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  &__img {
+    margin-block-end: 3rem;
+    > img {
+      max-inline-size: unset;
+      inline-size: 105vw;
+    }
+    &-left,
+    &-right {
+      display: none;
+    }
+  }
+  &__app {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-inline: 35px;
+    margin-bottom: 32px;
+    &-title {
+      font-size: base.$fs-40;
+      line-height: base.$line-height-110;
+    }
+    &-description {
+      color: base.$slate-600;
+    }
+    &-button {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+    }
+  }
+}

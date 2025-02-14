@@ -15,11 +15,29 @@ img {
 }
 
 body {
-  font-family: "Red Hat Display";
+  font-family: "Red Hat Display", sans-serif;
   font-size: 1rem;
-  line-height: 110%;
   letter-spacing: 0;
   color: #28283d;
+}
+
+.c-button {
+  display: inline-block;
+  padding: 1.0625em 2.5em 0.9375em;
+  background-color: #4d96a9;
+  color: #fafafa;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 150%;
+  border-radius: 100px;
+  border: none;
+}
+.c-button > span {
+  color: #8fe3f9;
+}
+.c-button--purple {
+  background-color: #855fb1;
 }
 
 .l-main-nav {
@@ -41,6 +59,49 @@ body {
     margin-block-start: 80px;
     max-inline-size: 1440px;
   }
+}
+.u-home-main {
+  margin-block: 64px;
+}
+
+/* Hero section */
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.hero__img {
+  margin-block-end: 3rem;
+}
+.hero__img > img {
+  max-inline-size: unset;
+  inline-size: 105vw;
+}
+.hero__img-left, .hero__img-right {
+  display: none;
+}
+.hero__app {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-inline: 35px;
+  margin-bottom: 32px;
+}
+.hero__app-title {
+  font-size: 2.5rem;
+  line-height: 110%;
+}
+.hero__app-description {
+  color: #87879d;
+}
+.hero__app-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
 }
 
 /*# sourceMappingURL=home.css.map */
