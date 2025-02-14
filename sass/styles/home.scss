@@ -240,3 +240,63 @@
   }
 }
 /* CTA section */
+.cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-inline: 2rem;
+  color: base.$white;
+  margin-block-start: 10.6rem;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(90deg, rgba(77, 151, 169, 0.9) 0%, rgba(77, 151, 169, 0.9) 100%),
+    url("../assets/mobile/image-footer.jpg");
+  background-size: cover;
+  background-position: center top;
+  &__indicator {
+    position: relative;
+    margin-block-start: -1.75rem;
+    margin-block-end: 2.25rem;
+    > div {
+      width: 3.5rem;
+      height: 3.5rem;
+      background-color: base.$white;
+      border: 1px solid base.$slate-300;
+      border-radius: 50%;
+      > span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: 900;
+        color: base.$slate-600;
+      }
+    }
+    > div::after {
+      position: absolute;
+      top: -5rem;
+      content: "";
+      background-color: base.$slate-300;
+      width: 1px;
+      height: 5rem;
+    }
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-block-end: 6rem;
+    &-title {
+      font-size: base.$fs-32;
+      font-weight: 900;
+    }
+  }
+  &__attribution {
+    font-size: base.$fs-12;
+    > a {
+      color: base.$white;
+      text-decoration: underline;
+    }
+  }
+}
