@@ -41,6 +41,9 @@ body {
 .c-button--purple {
   background-color: #855fb1;
 }
+.c-button--purple > span {
+  color: #d1d1df;
+}
 
 .l-main-nav {
   inline-size: 100%;

@@ -8,5 +8,8 @@
   }
   &--purple {
     background-color: base.$purple-600;
+    > span {
+      color: base.$slate-300;
+    }
   }
 }
