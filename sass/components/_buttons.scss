@@ -12,4 +12,11 @@
       color: base.$slate-300;
     }
   }
+  &--purple:hover {
+    background-color: base.$purple-400 !important;
+  }
+}
+.c-button:hover {
+  background-color: base.$cyan-400;
+  cursor: pointer;
 }
