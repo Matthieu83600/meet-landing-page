@@ -92,6 +92,7 @@
     }
     &__app {
       &-title {
+        margin-block-start: 5.625rem;
         font-size: base.$fs-64;
       }
       &-description {
@@ -225,9 +226,11 @@
       }
       &-title {
         font-size: base.$fs-40;
+        margin: 1rem 9.375rem 2rem 9.375rem;
       }
       &-description {
         font-size: base.$fs-18;
+        margin: 0 9.37rem 0 9.37rem;
       }
     }
   }
@@ -286,17 +289,9 @@
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    margin-block-end: 6rem;
     &-title {
       font-size: base.$fs-32;
       font-weight: 900;
-    }
-  }
-  &__attribution {
-    font-size: base.$fs-12;
-    > a {
-      color: base.$white;
-      text-decoration: underline;
     }
   }
 }
@@ -334,6 +329,7 @@
       }
       &-description {
         font-size: base.$fs-18;
+        margin-right: 90px;
       }
     }
   }

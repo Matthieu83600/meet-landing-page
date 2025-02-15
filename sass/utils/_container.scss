@@ -23,3 +23,8 @@
     margin-block: 4rem 4.5rem;
   }
 }
+@media (min-width: base.$xl-breakpoint) {
+  .u-home-main {
+    max-inline-size: 100%;
+  }
+}

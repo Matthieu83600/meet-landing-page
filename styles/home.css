@@ -17,6 +17,7 @@ img {
 }
 
 body {
+  background-color: #fafafa;
   font-family: "Red Hat Display", sans-serif;
   font-size: 1rem;
   letter-spacing: 0;
@@ -85,6 +86,11 @@ body {
 @media (min-width: 70.625rem) {
   .u-home-main {
     margin-block: 4rem 4.5rem;
+  }
+}
+@media (min-width: 100rem) {
+  .u-home-main {
+    max-inline-size: 100%;
   }
 }
 /* Hero section */
@@ -169,6 +175,7 @@ body {
     flex-basis: 100%;
   }
   .hero__app-title {
+    margin-block-start: 5.625rem;
     font-size: 4rem;
   }
   .hero__app-description {
@@ -295,9 +302,11 @@ body {
   }
   .introduction__text-title {
     font-size: 2.5rem;
+    margin: 1rem 9.375rem 2rem 9.375rem;
   }
   .introduction__text-description {
     font-size: 1.125rem;
+    margin: 0 9.37rem 0 9.37rem;
   }
 }
 @media (min-width: 100rem) {
@@ -352,18 +361,10 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  margin-block-end: 6rem;
 }
 .cta__text-title {
   font-size: 2rem;
   font-weight: 900;
-}
-.cta__attribution {
-  font-size: 0.75rem;
-}
-.cta__attribution > a {
-  color: #fafafa;
-  text-decoration: underline;
 }
 
 @media (min-width: 41.875rem) {
@@ -399,6 +400,7 @@ body {
   }
   .cta__text-description {
     font-size: 1.125rem;
+    margin-right: 90px;
   }
 }
 
