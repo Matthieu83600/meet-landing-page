@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/Matthieu83600/meet-landing-page](https://github.com/Matthieu83600/meet-landing-page)
+- Live Site URL: [https://matthieu83600.github.io/meet-landing-page/](https://matthieu83600.github.io/meet-landing-page/)
 
 ## My process
 
